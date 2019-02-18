@@ -1,0 +1,9 @@
+*libname XX "full pass of folda";
+data XX.YY;
+set XX.YY;
+result = trim(left(X1))||"_"||trim(left(X1));
+result2=tranwrd(result, "_1_","" );
+result3=tranwrd(result2, "_","" );
+result4=tranwrd(left(result3), " 1","" );
+result4=tranwrd(left(result3), " 1","" );
+run;
